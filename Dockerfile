@@ -1,13 +1,28 @@
-# base image
-FROM python:3.9-slim
+FROM python:3.10-slim
 
-
-# workdir
 WORKDIR /app
 
-#copy
-COPY . /app
+COPY . .
 
-# command
+RUN pip install flask
 
-CMD ["python","./hello.py"]
+EXPOSE 5000
+
+CMD ["python", "hello.py"]
+
+
+
+
+# # base image
+# FROM python:3.9-slim
+
+
+# # workdir
+# WORKDIR /app
+
+# #copy
+# COPY . /app
+
+# # command
+
+# CMD ["python","./hello.py"]
