@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/Checkout@v4
+        uses: actions/checkout@v4
 
       - name: Run python file
         run: python wrong_hello.py
