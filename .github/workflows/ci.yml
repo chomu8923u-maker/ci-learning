@@ -13,4 +13,4 @@ jobs:
         run: docker build -t tstark007/hello .
       
       - name: Run Docker Container
-        run: docker start tstark007/hello
+        run: docker run -d  tstark007/hello
